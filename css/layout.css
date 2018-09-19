@@ -325,25 +325,25 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
-.photoshop {
-  	width: 60%;
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
+.portuguese {
+  	width: 100%;
+  	-moz-animation: portuguese 2s ease;
+  	-webkit-animation: portuguese 2s ease;
 }
-.illustrator {
-  	width: 55%;
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
+.english {
+  	width: 85%;
+  	-moz-animation: english 2s ease;
+  	-webkit-animation: english 2s ease;
 }
-.wordpress {
+.spanish {
+  	width: 70%;
+  	-moz-animation: spanish 2s ease;
+  	-webkit-animation: spanish 2s ease;
+}
+.italian {
   	width: 50%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
-}
-.css {
-  	width: 90%;
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
+  	-moz-animation: italian 2s ease;
+  	-webkit-animation: italian 2s ease;
 }
 .html5 {
   	width: 80%;
