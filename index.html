@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Verification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="verification-container">
+        <label for="robot-checkbox">I am not a robot</label>
+        <div class="checkbox-container">
+            <input type="checkbox" id="robot-checkbox" onclick="togglePopup()">
+        </div>
+        <span class="result-message success-message">Success!</span>
+        <span class="result-message failed-message">Failed!</span>
+        <div class="popup">
+            <p>Drag the ninja from box A to box B</p>
+            <div id="boxA" class="box">
+                <div class="box-label">A</div>
+                <img id="ninja" src="ninja.png" alt="Ninja" class="ninja-img">
+            </div>
+            <div id="boxB" class="box">
+                <div class="box-label">B</div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
