@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.verification-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+}
+.checkbox-container {
+    margin-left: 10px;
+}
+.popup {
+    display: none;
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 130px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+}
+.ninja-img, .dog-img {
+    width: 50px;
+    cursor: pointer;
+    margin: 5px;
+}
+.result-message {
+    display: none;
+    margin-left: 10px;
+}
+.success-message {
+    color: green;
+}
+.failed-message {
+    color: red;
+}
+
+/* Add or update these styles in your existing styles.css file */
+.point {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #eee;
+    border-radius: 4px;
+    margin: 5px;
+    position: relative;
+    user-select: none;
+}
+
+.box {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #eee;
+    border-radius: 4px;
+    margin: 5px;
+    position: relative;
+}
+
+.box-label {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 0 5px;
+    user-select: none;
+}
+
+#ninja {
+    position: absolute;
+    cursor: move;
+    z-index: 1;
+    top: 5px;
+    left: 5px;
+    margin: 0;
+}
