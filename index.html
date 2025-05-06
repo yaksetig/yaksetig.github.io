@@ -1,30 +1,51 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robot Verification</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Cryptographer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="verification-container">
-        <label for="robot-checkbox">I am not a robot</label>
-        <div class="checkbox-container">
-            <input type="checkbox" id="robot-checkbox" onclick="togglePopup()">
-        </div>
-        <span class="result-message success-message">Success!</span>
-        <span class="result-message failed-message">Failed!</span>
-        <div class="popup">
-            <p>Drag the ninja from box A to box B</p>
-            <div id="boxA" class="box">
-                <div class="box-label">A</div>
-                <img id="ninja" src="ninja.png" alt="Ninja" class="ninja-img">
-            </div>
-            <div id="boxB" class="box">
-                <div class="box-label">B</div>
-            </div>
-        </div>
-    </div>
-    <script src="scripts.js"></script>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#reviews">Reviewer</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h1>Your Name</h1>
+      <p>Cryptographer specializing in modern cryptographic protocols, zero-knowledge proofs, and secure multi-party computation. Passionate about privacy and security in distributed systems.</p>
+    </section>
+
+    <section id="publications" class="section">
+      <h2>Publications</h2>
+      <ul id="pub-list"></ul>
+    </section>
+
+    <section id="reviews" class="section">
+      <h2>Reviewer Experiences</h2>
+      <ul id="review-list"></ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Name</p>
+  </footer>
+
+  <script defer src="script.js"></script>
 </body>
 </html>
