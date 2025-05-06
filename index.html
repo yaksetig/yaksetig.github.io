@@ -1,51 +1,169 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name — Cryptographer</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Cryptographer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Personal website of a professional cryptographer featuring publications, experience, and research interests.">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#reviews">Reviewer</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <div class="logo">YN</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </nav>
+    </header>
 
-  <main>
-    <section id="about" class="section">
-      <h1>Your Name</h1>
-      <p>Expert cryptographer focused on zero-knowledge proofs, post-quantum security, and secure multi-party computation. I design protocols that balance efficiency and strong privacy guarantees.</p>
-    </section>
+    <main>
+        <section id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Your Name</h1>
+                        <h2>Cryptographer & Security Researcher</h2>
+                        <p>Advancing the field of cryptography through innovative research and practical applications.</p>
+                        <div class="social-links">
+                            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="/api/placeholder/300/300" alt="Your Name" id="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="publications" class="section">
-      <h2>Publications</h2>
-      <ul id="pub-list"></ul>
-    </section>
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <p>I am a cryptographer specializing in post-quantum cryptography, zero-knowledge proofs, and secure multiparty computation. With over [X] years of experience in both academic research and industry applications, my work focuses on developing cryptographic protocols that balance security, privacy, and efficiency.</p>
+                    <p>My research interests include:</p>
+                    <ul class="interests-list">
+                        <li>Post-quantum cryptographic algorithms</li>
+                        <li>Zero-knowledge proof systems</li>
+                        <li>Secure multiparty computation</li>
+                        <li>Blockchain technology and consensus mechanisms</li>
+                        <li>Applied cryptography for privacy-enhancing technologies</li>
+                    </ul>
+                    <p>I received my Ph.D. in [Field] from [University] and have since contributed to various projects advancing the state of cryptographic research and applications.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="reviews" class="section">
-      <h2>Reviewer Experiences</h2>
-      <ul id="review-list"></ul>
-    </section>
+        <section id="publications">
+            <div class="container">
+                <h2 class="section-title">Selected Publications</h2>
+                <div class="publications-grid">
+                    <div class="publication-card">
+                        <h3>Efficient Zero-Knowledge Proofs for Quantum-Resistant Cryptosystems</h3>
+                        <p class="publication-authors">Your Name, Co-author 1, Co-author 2</p>
+                        <p class="publication-venue">Crypto 2024</p>
+                        <div class="publication-links">
+                            <a href="#" class="publication-link">Paper <i class="fas fa-file-pdf"></i></a>
+                            <a href="#" class="publication-link">Slides <i class="fas fa-file-powerpoint"></i></a>
+                            <a href="#" class="publication-link">Code <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="publication-card">
+                        <h3>Optimized Implementation of Lattice-Based Signature Schemes</h3>
+                        <p class="publication-authors">Your Name, Co-author 3</p>
+                        <p class="publication-venue">IEEE S&P 2023</p>
+                        <div class="publication-links">
+                            <a href="#" class="publication-link">Paper <i class="fas fa-file-pdf"></i></a>
+                            <a href="#" class="publication-link">Slides <i class="fas fa-file-powerpoint"></i></a>
+                            <a href="#" class="publication-link">Code <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="publication-card">
+                        <h3>Secure Multiparty Computation: A Comprehensive Survey</h3>
+                        <p class="publication-authors">Your Name, Co-author 4, Co-author 5</p>
+                        <p class="publication-venue">ACM Computing Surveys 2022</p>
+                        <div class="publication-links">
+                            <a href="#" class="publication-link">Paper <i class="fas fa-file-pdf"></i></a>
+                            <a href="#" class="publication-link">Slides <i class="fas fa-file-powerpoint"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="view-more">View All Publications</button>
+            </div>
+        </section>
 
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">@yourusername</a></p>
-    </section>
-  </main>
+        <section id="experience">
+            <div class="container">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Senior Cryptography Researcher</h3>
+                            <h4>Company/Institution Name</h4>
+                            <p>Leading research on post-quantum cryptographic protocols and their implementations. Developing privacy-preserving systems using zero-knowledge proofs and secure multiparty computation techniques.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2020 - 2023</div>
+                        <div class="timeline-content">
+                            <h3>Cryptography Researcher</h3>
+                            <h4>Previous Company/Institution</h4>
+                            <p>Worked on designing and analyzing cryptographic protocols for secure communication systems. Contributed to the development of a privacy-focused blockchain platform.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2018 - 2020</div>
+                        <div class="timeline-content">
+                            <h3>Postdoctoral Researcher</h3>
+                            <h4>University Name</h4>
+                            <p>Conducted research on lattice-based cryptography and zero-knowledge proof systems. Published several papers on efficient implementations of post-quantum algorithms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <footer>
-    <p>&copy; 2025 Your Name</p>
-  </footer>
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:your.email@example.com">your.email@example.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Institution/Company, City, Country</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-key"></i>
+                            <a href="#" class="pgp-key">PGP Public Key</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <script defer src="script.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Your Name. All rights reserved.</p>
+            <p class="footer-note">This site doesn't use cookies or tracking.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
