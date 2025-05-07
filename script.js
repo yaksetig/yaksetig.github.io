@@ -2,7 +2,6 @@
 const themeToggle = document.querySelector('.theme-toggle');
 const body = document.body;
 const currentYearEl = document.getElementById('current-year');
-const viewMoreBtn = document.querySelector('.view-more');
 const logo = document.querySelector('.logo');
 const nav = document.querySelector('nav');
 
@@ -11,6 +10,40 @@ const setCurrentYear = () => {
     const currentYear = new Date().getFullYear();
     currentYearEl.textContent = currentYear;
 };
+
+// Function for any future expandable content
+const handleExpandableContent = () => {
+    // This is a placeholder function for any future expandable content you might want to add
+    console.log('Expandable content functionality can be implemented here');
+};
+
+// No PGP key functionality as requested
+
+// Function to initialize the page
+const init = () => {
+    // Set current year
+    setCurrentYear();
+    
+    // Apply saved theme
+    applySavedTheme();
+    
+    // Initialize animations
+    initAnimations();
+    
+    // Event Listeners
+    themeToggle.addEventListener('click', toggleTheme);
+    document.addEventListener('click', handleNavClick);
+    window.addEventListener('scroll', handleScroll);
+    logo.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+};
+
+// Initialize everything when the DOM is loaded
+document.addEventListener('DOMContentLoaded', init);
 
 // Function to toggle between light and dark theme
 const toggleTheme = () => {
@@ -80,4 +113,18 @@ const initAnimations = () => {
 
 // Function to handle navigation click
 const handleNavClick = (e) => {
-    // Check if the clicked element is a navigation
+    // Check if the clicked element is a navigation link
+    if (e.target.tagName === 'A' && e.target.getAttribute('href').startsWith('#')) {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+            // Smooth scroll to the target element
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+            });
+        }
+    }
+};
